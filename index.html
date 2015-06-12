@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>simple drawing tool</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<header>
+		<strong>简易画图工具</strong>
+	</header>
+	<div class="main-content">
+		<div class="draw-color">
+			<div class="color"><img src="image/000.jpg" alt="000" onclick="changeColor('#000',this)"> </div>
+			<div class="color"><img src="image/5D98F2.jpg" alt="5D98F2" onclick="changeColor('#5D98F2',this)"> </div>
+			<div class="color"><img src="image/46E7ED.jpg" alt="46E7ED" onclick="changeColor('#46E7ED',this)"> </div>
+			<div class="color"><img src="image/76A7B8.jpg" alt="76A7B8" onclick="changeColor('#76A7B8',this)"> </div>
+			<div class="color"><img src="image/A6A6A6.jpg" alt="A6A6A6" onclick="changeColor('#A6A6A6',this)"> </div>
+			<div class="color"><img src="image/93F588.jpg" alt="93F588" onclick="changeColor('#93F588',this)"> </div>
+			<div class="color"><img src="image/F2F733.jpg" alt="F2F733" onclick="changeColor('#F2F733',this)"> </div>
+			<div class="color"><img src="image/EF5D5D.jpg" alt="EF5D5D" onclick="changeColor('#EF5D5D',this)"> </div>
+			<div class="color"><img src="image/F588EC.jpg" alt="F588EC" onclick="changeColor('#F588EC',this)"> </div>
+			<div class="color"><img src="image/D046ED.jpg" alt="D046ED" onclick="changeColor('#D046ED',this)"></div>
+		</div>
+		<div class="draw-thick">
+			<img src="image/thick-1.jpg" alt="tiny" onclick="changeThick('1',this)"> 
+			<img src="image/thick-2.jpg" alt="middle" onclick="changeThick('10',this)"> 
+			<img src="image/thick-3.jpg" alt="thick" onclick="changeThick('20',this)"> 
+		</div>
+		<div class="button">
+			<div class="button-style" onclick="clearCanvas()"><a>clear</a></div>
+			<div class="button-style" onclick="saveCanvas()"><a>save</a></div>
+		</div>
+		<canvas id="draw-canvas" width="1215px" height="380px">
+		</canvas>
+	</div>
+</body>
+</html>
