@@ -67,7 +67,7 @@ img.t-select{
 	top:45%;
 	width:5px;
 	height:5px;
-	border: 1px solid #000
+	border: 1px solid grey
 }
 .erase #erase-mid{
 	position:relative;
@@ -75,7 +75,7 @@ img.t-select{
 	top:36%;
 	width:10px;
 	height:10px;
-	border: 1px solid #000
+	border: 1px solid grey
 }
 
 .erase #erase-big{
@@ -84,7 +84,7 @@ img.t-select{
 	top:22%;
 	width:15px;
 	height:15px;
-	border: 1px solid #000
+	border: 1px solid grey
 }
 
 
