@@ -37,52 +37,52 @@ window.onload = function(){
 	context.lineWidth = 1;
 	
 	var erase = document.getElementById("erase-little");
-	var erase-select=0;
+	var erase_select=0;
 	EventUtil.addHandler(erase,"click",function(event){
 		context.strokeStyle = "#fff";
 		context.lineWidth = 1;
-		if(erase-select != 1){
+		if(erase_select != 1){
 			var element=event.target;
 			element.style.cssText = "border:1px solid grey";
-			if(erase-select == 2){
+			if(erase_select == 2){
 				document.getElementById("erase-mid").style.cssText = "border:1px solid #000";
 			}
-			else if(erase-select == 3){
+			else if(erase_select == 3){
 				document.getElementById("erase-big").style.cssText = "border:1px solid #000";
 			}
-			erase-select = 1;
+			erase_select = 1;
 		}
 	});
 	erase = document.getElementById("erase-mid");
 	EventUtil.addHandler(erase,"click",function(){
 		context.strokeStyle = "#fff";
 		context.lineWidth = 10;
-		if(erase-select != 2){
+		if(erase_select != 2){
 			var element=event.target;
 			element.style.cssText = "border:1px solid grey";
-			if(erase-select == 1){
+			if(erase_select == 1){
 				document.getElementById("erase-little").style.cssText = "border:1px solid #000";
 			}
-			else if(erase-select == 3){
+			else if(erase_select == 3){
 				document.getElementById("erase-big").style.cssText = "border:1px solid #000";
 			}
-			erase-select = 2;
+			erase_select = 2;
 		}
 	});
 	erase = document.getElementById("erase-big");
 	EventUtil.addHandler(erase,"click",function(){
 		context.strokeStyle = "#fff";
 		context.lineWidth = 20;
-		if(erase-select != 3){
+		if(erase_select != 3){
 			var element=event.target;
 			element.style.cssText = "border:1px solid grey";
-			if(erase-select == 2){
+			if(erase_select == 2){
 				document.getElementById("erase-mid").style.cssText = "border:1px solid #000";
 			}
-			else if(erase-select == 1){
+			else if(erase_select == 1){
 				document.getElementById("erase-little").style.cssText = "border:1px solid #000";
 			}
-			erase-select = 3;
+			erase_select = 3;
 		}
 	});
 }
