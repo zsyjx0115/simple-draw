@@ -24,6 +24,7 @@ var EventUtil = {
 };
 var canvas=null;
 var context=null;
+var erase_select=0;
 
 window.onload = function(){
 	canvas = document.getElementById("draw-canvas");
@@ -37,7 +38,6 @@ window.onload = function(){
 	context.lineWidth = 1;
 	
 	var erase = document.getElementById("erase-little");
-	var erase_select=0;
 	EventUtil.addHandler(erase,"click",function(event){
 		context.strokeStyle = "#fff";
 		context.lineWidth = 1;
@@ -112,6 +112,7 @@ function draw(event){
 
 var previousColor = null;
 function changeColor(color,element){
+	clearErase();
 	if(previousColor != element){
 		context.strokeStyle = color;
 		element.className = "c-select";
@@ -124,6 +125,7 @@ function changeColor(color,element){
 
 var previousThick = null;
 function changeThick(thick, element){
+	clearErase();
 	if(previousThick != element){
 		context.lineWidth = thick;
 		element.className = "t-select";
@@ -133,6 +135,20 @@ function changeThick(thick, element){
 		previousThick = element;
 	}
 }
+
+function clearErase(){
+	if(erase_select == 1){
+		document.getElementById("erase-little").style.cssText = "border:1px solid grey";
+	}
+	else if(erase_select == 2){
+		document.getElementById("erase-mid").style.cssText = "border:1px solid grey";
+	}
+	else if(erase_select == 3){
+		document.getElementById("erase-big").style.cssText = "border:1px solid grey";
+	}
+	erase_select = 0;
+}
+
 
 function clearCanvas(){
 	context.clearRect(0, 0, canvas.width, canvas.height);
