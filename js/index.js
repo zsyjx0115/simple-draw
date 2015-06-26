@@ -37,19 +37,50 @@ window.onload = function(){
 	context.lineWidth = 1;
 	
 	var erase = document.getElementById("erase-little");
-	EventUtil.addHandler(erase,"click",function(){
+	var erase-select=0;
+	EventUtil.addHandler(erase,"click",function(event){
 		context.strokeStyle = "#fff";
 		context.lineWidth = 1;
+		if(erase-select != 1){
+			var element=event.target;
+			element.style.border = "1px solid grey";
+			if(erase-select == 2){
+				document.getElementById("erase-mid").style.border = "1px solid #000";
+			}
+			else if(erase-select == 3){
+				document.getElementById("erase-big").style.border = "1px solid #000";
+			}
+		}
 	});
 	erase = document.getElementById("erase-mid");
 	EventUtil.addHandler(erase,"click",function(){
 		context.strokeStyle = "#fff";
 		context.lineWidth = 10;
+		if(erase-select != 2){
+			var element=event.target;
+			element.style.border = "1px solid grey";
+			if(erase-select == 1){
+				document.getElementById("erase-little").style.border = "1px solid #000";
+			}
+			else if(erase-select == 3){
+				document.getElementById("erase-big").style.border = "1px solid #000";
+			}
+		}
 	});
 	erase = document.getElementById("erase-big");
 	EventUtil.addHandler(erase,"click",function(){
 		context.strokeStyle = "#fff";
 		context.lineWidth = 20;
+		if(erase-select != 3){
+			var element=event.target;
+			element.style.border = "1px solid grey";
+			if(erase-select == 2){
+				document.getElementById("erase-mid").style.border = "1px solid #000";
+			}
+			else if(erase-select == 1){
+				document.getElementById("erase-little").style.border = "1px solid #000";
+			}
+		}
 	});
 }
 
