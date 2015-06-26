@@ -50,6 +50,7 @@ window.onload = function(){
 			else if(erase-select == 3){
 				document.getElementById("erase-big").style.cssText = "border:1px solid #000";
 			}
+			erase-select = 1;
 		}
 	});
 	erase = document.getElementById("erase-mid");
@@ -65,6 +66,7 @@ window.onload = function(){
 			else if(erase-select == 3){
 				document.getElementById("erase-big").style.cssText = "border:1px solid #000";
 			}
+			erase-select = 2;
 		}
 	});
 	erase = document.getElementById("erase-big");
@@ -80,6 +82,7 @@ window.onload = function(){
 			else if(erase-select == 1){
 				document.getElementById("erase-little").style.cssText = "border:1px solid #000";
 			}
+			erase-select = 3;
 		}
 	});
 }
