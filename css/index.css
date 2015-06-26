@@ -40,7 +40,7 @@ header>strong {
 }
 
 .draw-thick {
-	width: 38%;
+	width: 20%;
 	height: 100px;
 	margin: 10px;
 	border: 1px solid #76A7B8;
@@ -52,6 +52,43 @@ header>strong {
 img.t-select{
 	border:1px solid #76A7B8
 }
+
+
+.erase{
+	width: 15%;
+	height: 100px;
+	margin: 10px;
+	border: 1px solid #76A7B8;
+	float: left
+}
+.erase #erase-little{
+	position:relative;
+	left:15%;
+	top:45%;
+	width:5px;
+	height:5px;
+	border: 1px solid #000
+}
+.erase #erase-mid{
+	position:relative;
+	left:35%;
+	top:36%;
+	width:10px;
+	height:10px;
+	border: 1px solid #000
+}
+
+.erase #erase-big{
+	position:relative;
+	left:60%;
+	top:22%;
+	width:15px;
+	height:15px;
+	border: 1px solid #000
+}
+
+
+
 
 .button{
 	width:	8%;
