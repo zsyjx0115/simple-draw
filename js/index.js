@@ -43,12 +43,12 @@ window.onload = function(){
 		context.lineWidth = 1;
 		if(erase_select != 1){
 			var element=event.target;
-			element.style.cssText = "border:1px solid grey";
+			element.style.cssText = "border:1px solid #000";
 			if(erase_select == 2){
-				document.getElementById("erase-mid").style.cssText = "border:1px solid #000";
+				document.getElementById("erase-mid").style.cssText = "border:1px solid grey";
 			}
 			else if(erase_select == 3){
-				document.getElementById("erase-big").style.cssText = "border:1px solid #000";
+				document.getElementById("erase-big").style.cssText = "border:1px solid grey";
 			}
 			erase_select = 1;
 		}
@@ -59,12 +59,12 @@ window.onload = function(){
 		context.lineWidth = 10;
 		if(erase_select != 2){
 			var element=event.target;
-			element.style.cssText = "border:1px solid grey";
+			element.style.cssText = "border:1px solid #000";
 			if(erase_select == 1){
-				document.getElementById("erase-little").style.cssText = "border:1px solid #000";
+				document.getElementById("erase-little").style.cssText = "border:1px solid grey";
 			}
 			else if(erase_select == 3){
-				document.getElementById("erase-big").style.cssText = "border:1px solid #000";
+				document.getElementById("erase-big").style.cssText = "border:1px solid grey";
 			}
 			erase_select = 2;
 		}
@@ -75,12 +75,12 @@ window.onload = function(){
 		context.lineWidth = 20;
 		if(erase_select != 3){
 			var element=event.target;
-			element.style.cssText = "border:1px solid grey";
+			element.style.cssText = "border:1px solid #000";
 			if(erase_select == 2){
-				document.getElementById("erase-mid").style.cssText = "border:1px solid #000";
+				document.getElementById("erase-mid").style.cssText = "border:1px solid grey";
 			}
 			else if(erase_select == 1){
-				document.getElementById("erase-little").style.cssText = "border:1px solid #000";
+				document.getElementById("erase-little").style.cssText = "border:1px solid grey";
 			}
 			erase_select = 3;
 		}
